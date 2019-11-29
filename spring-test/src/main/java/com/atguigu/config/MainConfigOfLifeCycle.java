@@ -11,9 +11,8 @@ import org.springframework.context.annotation.Scope;
 @ComponentScan("com.atguigu")
 public class MainConfigOfLifeCycle {
 
-
 	@Bean(initMethod = "init",destroyMethod = "destory")
-@Scope("prototype")
+	@Scope("prototype")
 	public Car car(){
 
 		return new Car();
