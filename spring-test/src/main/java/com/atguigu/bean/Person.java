@@ -1,10 +1,16 @@
 package com.atguigu.bean;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Person {
 
+	@Value("张三")
 	private String name;
+	@Value("#{20-2}")
 	private  Integer age;
 
+@Value("${person.nickName}")
+	private String nickName;
 	public Person() {
 	}
 
@@ -29,11 +35,20 @@ public class Person {
 		this.age = age;
 	}
 
+	public String getNickName() {
+		return nickName;
+	}
+
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+
 	@Override
 	public String toString() {
 		return "Person{" +
 				"name='" + name + '\'' +
 				", age=" + age +
+				", nickName='" + nickName + '\'' +
 				'}';
 	}
 }
