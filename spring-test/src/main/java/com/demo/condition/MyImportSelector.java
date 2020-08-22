@@ -9,6 +9,6 @@ public class MyImportSelector  implements ImportSelector {
 
 
 		System.out.println(898989);
-		return new String[]{"com.demo.bean.Blue","com.demo.bean.Yellow"};
+		return new String[]{"com.atguigu.bean.Blue","com.atguigu.bean.Yellow"};
 	}
 }

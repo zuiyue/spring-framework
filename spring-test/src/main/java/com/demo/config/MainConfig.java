@@ -5,15 +5,14 @@ import org.springframework.context.annotation.*;
 
 @Configuration  //告诉spring 这是一个配置类
 
-/*@ComponentScans(value = {
+@ComponentScans(value = {
 		@ComponentScan(value = "com.demo",includeFilters = {
-				*//*@ComponentScan.Filter(type= FilterType.ANNOTATION,classes = {Controller.class}),
-				@ComponentScan.Filter(type= FilterType.ASSIGNABLE_TYPE,classes = {BookService.class}),*//*
+				/*@ComponentScan.Filter(type= FilterType.ANNOTATION,classes = {Controller.class}),
+				@ComponentScan.Filter(type= FilterType.ASSIGNABLE_TYPE,classes = {BookService.class}),*/
 				@ComponentScan.Filter(type= FilterType.CUSTOM,classes = {MyTypeFilter.class})
 		},useDefaultFilters = false)
 
-})*/
-@ComponentScan(value = "com.demo")
+})
 public class MainConfig {
 
 	@Bean("person")

@@ -31,25 +31,16 @@ public class MainTest {
 
 		AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(MainConfig.class);
 
-
-
-		String[] beanDefinitionNames = annotationConfigApplicationContext.getBeanDefinitionNames();
-
-
-	/*	for (int i = 0; i < beanDefinitionNames.length; i++) {
-			System.out.println(beanDefinitionNames[i]+"--->"+annotationConfigApplicationContext.getBeanDefinition(beanDefinitionNames[i]));
-		}
-*/
 		/*Person person=(Person)annotationConfigApplicationContext.getBean("person");
 
 		System.out.println(person);*/
 
-		/*String[] beanNamesForType = annotationConfigApplicationContext.getBeanNamesForType(Person.class);
+		String[] beanNamesForType = annotationConfigApplicationContext.getBeanNamesForType(Person.class);
 		for (String name:beanNamesForType){
 			System.out.println(name);
 
 		}
-*/
+
 
 
 	}

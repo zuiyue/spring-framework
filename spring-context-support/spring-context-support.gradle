@@ -9,7 +9,8 @@ dependencies {
 	optional("javax.activation:javax.activation-api")
 	optional("javax.mail:javax.mail-api")
 	optional("javax.cache:cache-api")
-	optional("com.github.ben-manes.caffeine:caffeine")
+	//compile ("com.github.ben-manes.caffeine:caffe1ine")
+	compile group: 'com.github.ben-manes.caffeine', name: 'caffeine', version: '2.8.5'
 	optional("net.sf.ehcache:ehcache")
 	optional("org.quartz-scheduler:quartz")
 	optional("org.codehaus.fabric3.api:commonj")

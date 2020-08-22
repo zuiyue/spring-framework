@@ -28,9 +28,9 @@ public class MyTypeFilter implements TypeFilter {
 		System.out.println("-->"+className);
 
 
-		/*if(className.contains("er")){
+		if(className.contains("er")){
 			return true;
-		}*/
+		}
 
 		return false;
 	}
