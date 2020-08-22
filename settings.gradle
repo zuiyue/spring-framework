@@ -2,6 +2,7 @@ pluginManagement {
 	repositories {
 		gradlePluginPortal()
 		maven { url 'https://repo.spring.io/plugins-release' }
+		maven{url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 	}
 }
 enableFeaturePreview("GRADLE_METADATA")
@@ -25,6 +26,7 @@ include "spring-messaging"
 include "spring-orm"
 include "spring-oxm"
 include "spring-test"
+include "spring-demo"
 include "spring-tx"
 include "spring-web"
 include "spring-webmvc"
